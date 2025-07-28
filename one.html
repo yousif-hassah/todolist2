@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>to do list</title>
+    <link rel="stylesheet" href="second.css" />
+    <link rel="shortcut icon" href="./image/icon.jpeg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <audio id="check-sound" src="./check-sound.mp3" preload="auto"></audio>
+
+
+
+  </head>
+  <script src="three.js"></script>
+  <body>
+    <main>
+      <div class="contaner">
+        <!-- todo -->
+        <div class="todo-list">
+          <!-- title -->
+          <div class="title">
+            <img
+              src="./image/todo1.jpeg"
+              alt=""
+            />
+            <h2>Todo</h2>
+          </div>
+
+          <!-- row -->
+          <div class="row">
+            <input type="text" id="input" placeholder="Enter a note" />
+            <button class="btn">ADD</button>
+            <img id="global-timer" src="./image/alarm.jpeg" alt="alarm" width="40px" style="cursor:pointer;" title="Set a general alarm">
+            <audio id="alarm-sound" src="./alarm_clock.mp3" preload="auto"></audio>
+            <!-- أضف داخل كل مهمة: -->
+            <audio class="voice-note" controls style="display: none"></audio>
+          </div>
+
+          <!-- list -->
+          <ul id="task-ls">
+            <!--
+    <li class="checked">Task 1<span>&times;</span></li>
+    <li>Task 2<span>&times;</span></li>
+    <li>Task 3<span>&times;</span></li>
+     -->
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

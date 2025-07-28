@@ -1,0 +1,363 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&display=swap");
+
+:root {
+  --gray: #333;
+  --green: rgba(46, 161, 144, 0.933);
+   --gray2: #aaaaaa;
+    --ff: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Intel One Mono", system-ui;
+}
+
+.contaner {
+  min-height: 100vh;
+  background-color: var(--gray);
+ padding: 10px;
+}
+
+.todo-list {
+  background-color: rgb(250, 248, 248);
+  max-width: 540px;
+  margin: 100px auto 30px ; 
+  padding:40px 30px 70px ;
+border-radius: 10px;
+}
+
+
+
+
+.todo-list .title {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* margin-bottom: 10px;
+
+}
+
+.todo-list .title img {
+width: 30px;
+margin-right: 10px;
+}
+
+
+
+.todo-list .row {
+margin-bottom: 25px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.todo-list .row input{
+    background-color: rgb(209, 218, 226);
+    width: 80%;
+    padding: 15px ;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.todo-list .row .btn{
+    padding: 13px 30px;
+    background-color: var(--green);
+     border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color:var(--ff)
+}
+
+#task-ls li{
+    list-style: none;
+    font-size: 18px;
+    padding: 12px 8px 12px 50px;
+    position: relative;
+   
+}
+
+
+#task-ls li span {
+position: absolute;
+right: 10px;
+top: 5px;
+cursor: pointer;
+text-align: center;
+font-size: 25px;
+
+}
+
+
+#task-ls li::before {
+    content: "";
+    position: absolute;
+    top: auto;
+    left: 10px;;
+    width: 28px;
+    height: 28px;
+    background:url("./image/uncheked.jpg") center/cover;
+    cursor: pointer;
+}
+
+#task-ls li.checked::before{
+    background:url(./image/checked.jpeg)center/cover;
+}
+
+#task-ls li.checked{
+text-decoration: line-through;
+
+}  */
+
+@import url("https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&display=swap");
+
+:root {
+  --gray: #333;
+  --green: rgba(46, 161, 144, 0.933);
+  --gray2: #aaaaaa;
+  --ff: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Intel One Mono", system-ui;
+  background-color: var(--gray);
+  min-height: 100vh;
+}
+
+.contaner {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 540px;
+  padding: 30px 20px 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Title */
+.todo-list .title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todo-list .title img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+/* Row */
+.todo-list .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+
+.record-btn {
+  background-color: #ffffff;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+.voice-note {
+  display: block;
+  margin-top: 5px;
+}
+
+
+/* 
+.todo-list .row img {
+ 
+  width: auto;
+  margin-right:auto;
+  align-items:center;
+  outline: none;
+  border: none;
+  justify-content: center;
+  
+}
+ */
+
+
+.todo-list .row input {
+  flex: 1 1 auto;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #d1dae2;
+  min-width: 60%;
+}
+
+.todo-list .row .btn {
+  padding: 13px 24px;
+  background-color: var(--green);
+  border: none;
+  border-radius: 5px;
+  color: var(--ff);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Tasks */
+#task-ls {
+  padding-left: 0;
+}
+
+#task-ls li {
+  list-style: none;
+  font-size: 18px;
+  padding: 12px 8px 12px 50px;
+  position: relative;
+  margin-bottom: 12px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+ 
+  cursor: pointer;
+
+
+}
+
+#task-ls li span {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 22px;
+  color: red;
+}
+
+#task-ls li::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  background: url("./image/uncheked.jpg") center/cover no-repeat;
+  cursor: pointer;
+}
+
+#task-ls li.checked::before {
+  background: url("./image/checked.jpeg") center/cover no-repeat;
+}
+
+#task-ls li.checked {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .todo-list {
+    padding: 25px 15px 40px;
+  }
+
+  .todo-list .row input {
+    font-size: 14px;
+  }
+
+  .todo-list .row .btn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .todo-list {
+    padding: 20px 10px 30px;
+  }
+
+  .todo-list .title img {
+    width: 24px;
+  }
+
+  #task-ls li {
+    font-size: 16px;
+    padding-left: 45px;
+  }
+
+  #task-ls li::before {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+
+.notes-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.notes-row > div {
+  position: relative;
+}
+
+.notes-row button.play-btn {
+  background-color: #000;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.notes-row button.play-btn:hover {
+  background-color: #333;
+}
+
+.notes-row button.delete-audio {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: rgb(70, 126, 125);
+  color: white;
+  border: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.notes-row button.record-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+}
